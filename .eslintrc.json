@@ -1,0 +1,8 @@
+{
+"parser": "babel-eslint",
+"extends": ["airbnb-base", "plugin:react/recommended"],
+"plugins": [
+    "import",
+    "react"
+  ]
+}
