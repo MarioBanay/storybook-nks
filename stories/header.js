@@ -4,6 +4,6 @@ import Header from '../components/Header/index';
 import Logo from '../assets/duff.png';
 
 storiesOf('Header', module)
-.add('header with logo', () => (
+.add('with logo', () => (
   <Header logo={Logo} />
 ));
