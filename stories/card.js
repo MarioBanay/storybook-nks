@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Card from '../components/index';
+import Card from '../components/Card/index';
 
 storiesOf('Card', module)
     .add('card', () => (

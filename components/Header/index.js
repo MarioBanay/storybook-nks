@@ -13,7 +13,5 @@ export default class Header extends React.Component {
 }
 
 Header.PropTypes = {
-  imgUrl: PropTypes.string,
-  imgClass: PropTypes.string,
-  text: PropTypes.string,
+  logo: PropTypes.string
 };
