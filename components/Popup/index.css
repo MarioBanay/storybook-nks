@@ -1,9 +1,9 @@
 .Container {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     margin: 5px;
-    left: 80px;
+    left: 74px;
     display: -webkit-inline-box;
 }
 
@@ -26,8 +26,8 @@
 
 .Component {
     position: absolute;
-    left: -5px;
-    top: -5px;    
+    left: 165px;
+    top: -45px;    
 }
 
 .Hide {
@@ -37,6 +37,6 @@
 @media (min-width: 600px) {
     .Modal {
         width: 200px;
-        left: calc(50% - 50px);
+        left: calc(50% - 93px);
     }
 }
