@@ -7,6 +7,8 @@ function loadStories() {
   require('../stories/popup');
   require('../stories/hyperlink');
   require('../stories/navigationmenu');
+  require('../stories/footer');
+  
 }
 
 configure(loadStories, module);
