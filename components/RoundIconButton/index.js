@@ -13,8 +13,8 @@ export default class RoundIconButton extends React.Component {
         );
     }
 }
-
+/* 
 RoundIconButton.PropTypes = {
     link: PropTypes.string,
     icon: PropTypes.img
-};
+}; */
