@@ -1,22 +1,25 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import NavigationMenu from '../components/NavigationMenu/index';
+import { Link } from 'react-router-dom';
+import Hyperlink from '../components/Hyperlink/index';
+
 
 let data = [
     {
-        link: "https://google.com/",
+        link: <Hyperlink link="https://google.com/" text="Google" />,
         text: "Google"
     },
     {
-        link: "https://github.com/",
+        link: <Hyperlink link="https://github.com/" text="GitHub" />,
         text: "GitHub"
     },
     {
-        link: "https://algebra.hr/",
+        link: <Hyperlink link="https://algebra.hr/" text="Algebra" />,
         text: "Algebra"
     },
     {
-        link: "https://linkedin.com/",
+        link: <Hyperlink link="https://linkedin.com/" text="LinkedIn" />,
         text: "LinkedIn"
     }
     
