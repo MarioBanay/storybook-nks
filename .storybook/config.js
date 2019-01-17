@@ -6,6 +6,7 @@ function loadStories() {
   require('../stories/roundiconbutton');
   require('../stories/popup');
   require('../stories/hyperlink');
+  require('../stories/navigationmenu');
 }
 
 configure(loadStories, module);
