@@ -3,7 +3,7 @@
     width: 32px;
     height: 32px;
     margin: 5px;
-    left: 74px;
+    left: -306px;
     display: -webkit-inline-box;
 }
 
@@ -21,13 +21,14 @@
     height: 200px;
     text-align: center;
     font-size: 8px;
+    top:50px
 }
 
 
 .Component {
     position: absolute;
-    left: 165px;
-    top: -45px;    
+    left: 375px;
+    top: -5px;    
 }
 
 .Hide {
@@ -37,6 +38,6 @@
 @media (min-width: 600px) {
     .Modal {
         width: 200px;
-        left: calc(50% - 93px);
+        left: calc(50% + 143px);
     }
 }
