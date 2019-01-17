@@ -1,5 +1,6 @@
 .Footer {
     width: 330px;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     position: relative;
     margin: 5px;
