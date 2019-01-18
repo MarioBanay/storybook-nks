@@ -15,23 +15,16 @@ const tableItems = [
         name: 'Beer name'
     },
     {
-        name: 'Quantity'
-    },
-    {
-        name: ' '
+        name: 'Remove'
     }
 ];
 
-var imgStyle = {
-    height: '20px'
-  };
 const tableData = [
     {
         id: '#',
         image: 'Image',
         name: 'Beer name',
-        quantity: '11',
-        button: <Button style={imgStyle} icon={CrossIcon} link="https://github.com/" />
+        button: <Button icon={CrossIcon} link="https://github.com/" />
     }
 ];
 

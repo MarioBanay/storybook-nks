@@ -21,11 +21,37 @@ body {
     width: 13%;
     display: block;
     margin: 0px auto;
-    position: relative;
-    top: 30px;
 }
 
 .title, .description {
     font-size: 0.8em;
     margin: 10px;
+}
+
+.favoriteIcon {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    float: left;
+}
+
+.addToCartIcon {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    float: left;
+}
+
+.infoIcon {
+    position: relative;
+    top: 10px;
+    left: -10px;
+    float: right;
+}
+
+.imageContainer {
+    position: absolute;
+    top: 40px;
+    width: 235px;
+    height: 180px;
 }

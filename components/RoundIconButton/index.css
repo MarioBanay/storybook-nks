@@ -1,11 +1,5 @@
-.RoundIconButton {
-    height: 30px;
-    float: left;
-    margin: 5px;
-}
-
-a {
-    width: 100%;
-    height: 30px;
+a, .RoundIconButton {
+    display: inline-block;
+    height: 32px;
 }
 

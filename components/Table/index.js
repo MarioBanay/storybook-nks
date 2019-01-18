@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './index.css';
+import Button from '../RoundIconButton/index';
 
 export default class Table extends React.Component {
   render() {
@@ -12,7 +13,6 @@ export default class Table extends React.Component {
         <td>{index + 1}</td>
         <td>{data.image}</td>
         <td>{data.name}</td>
-        <td>{data.quantity}</td>
         <td>{data.button}</td>
       </tr>
 
