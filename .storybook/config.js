@@ -8,6 +8,7 @@ function loadStories() {
   require('../stories/hyperlink');
   require('../stories/navigationmenu');
   require('../stories/footer');
+  require('../stories/table');
   
 }
 
