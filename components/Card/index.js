@@ -3,6 +3,10 @@ import classes from './index.css';
 import RoundIconButton from '../RoundIconButton/index';
 
 export default class Card extends React.Component {
+    consoleLog = (poruka) => {
+        console.log(poruka);
+    }
+
     render() {
         return (
             <div className={classes.card}>
@@ -10,7 +14,7 @@ export default class Card extends React.Component {
                     <div className={classes.favoriteIcon}>
                         <RoundIconButton
                             icon={this.props.favoriteIcon}
-                            clicked={() => this.props.favoriteIconlink}
+                            clicked={this.props.favoriteIconlink}
                         />
                     </div>
                     <div className={classes.addToCartIcon}>
