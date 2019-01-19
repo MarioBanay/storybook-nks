@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classes from './index.css';
 import RoundIconButton from '../RoundIconButton/index';
 
@@ -40,9 +39,3 @@ export default class Card extends React.Component {
         );
     }
 }
-
-Card.PropTypes = {
-    imgBeerUrl: PropTypes.string,
-    name: PropTypes.string,
-    description: PropTypes.string,
-};

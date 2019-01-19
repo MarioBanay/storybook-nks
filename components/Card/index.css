@@ -5,6 +5,7 @@ body {
 
 .card {
     display: inline-block;
+    margin: 10px auto;
     margin: 10px;
     width: 235px;
     border: 1px solid #ccc;
@@ -18,7 +19,7 @@ body {
 }
 
 .img {
-    width: 13%;
+    height: 120px;
     display: block;
     margin: 0px auto;
 }
@@ -29,6 +30,7 @@ body {
 }
 
 .favoriteIcon {
+    display: flex;
     position: relative;
     top: 10px;
     left: 10px;
@@ -38,8 +40,8 @@ body {
 .addToCartIcon {
     position: relative;
     top: 10px;
-    left: 20px;
-    float: left;
+    left: 120px;
+    float: left;    
 }
 
 .infoIcon {
