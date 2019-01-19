@@ -10,19 +10,19 @@ export default class Card extends React.Component {
                     <div className={classes.favoriteIcon}>
                         <RoundIconButton
                             icon={this.props.favoriteIcon}
-                            link={this.props.favoriteIconlink}
+                            clicked={this.props.favoriteIconlink}
                         />
                     </div>
                     <div className={classes.addToCartIcon}>
                         <RoundIconButton
                             icon={this.props.addToCartIcon}
-                            link={this.props.addToCartIconLink}
+                            clicked={this.props.addToCartIconLink}
                         />
                     </div>
                     <div className={classes.infoIcon}>
                         <RoundIconButton
                             icon={this.props.infoIcon}
-                            link={this.props.infoIconLink}
+                            clicked={this.props.infoIconLink}
                         />
                     </div>
                     <div className={classes.imageContainer}>

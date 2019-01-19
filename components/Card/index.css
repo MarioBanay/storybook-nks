@@ -5,7 +5,7 @@ body {
 
 .card {
     display: inline-block;
-    margin: 10px auto;
+    box-sizing: border-box;
     margin: 10px;
     width: 235px;
     border: 1px solid #ccc;
@@ -16,6 +16,7 @@ body {
     height: 180px;
     background-color: #ccc;
     position: relative;
+    left: -1px;
 }
 
 .img {
@@ -41,7 +42,7 @@ body {
     position: relative;
     top: 10px;
     left: 120px;
-    float: left;    
+    float: left;
 }
 
 .infoIcon {
@@ -53,7 +54,7 @@ body {
 
 .imageContainer {
     position: absolute;
-    top: 40px;
+    padding-top: 45px;
     width: 235px;
     height: 180px;
 }
