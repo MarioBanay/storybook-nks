@@ -23,6 +23,7 @@ export default class Card extends React.Component {
                         />
                     </div>
                     <div className={classes.infoIcon}>
+                    
                         <RoundIconButton
                             icon={this.props.infoIcon}
                             clicked={this.props.clickedOnInfo}
