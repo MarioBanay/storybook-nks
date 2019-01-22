@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import NavigationMenu from '../components/NavigationMenu/index';
-import { Link } from 'react-router-dom';
 import Hyperlink from '../components/Hyperlink/index';
 
 

@@ -2,9 +2,13 @@ a, .RoundIconButton {
     display: inline-block;
     height: 32px;
     width: 32px;
+
 }
 
 .RoundIconButton:hover {
     cursor: pointer;
+}
+
+.RoundIconButton {
 }
 

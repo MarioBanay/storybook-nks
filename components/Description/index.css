@@ -1,0 +1,21 @@
+.image {
+    width: 50px;
+    float: left;
+    margin: 20px 50px;
+}
+
+.hr {
+    clear: both;
+}
+
+.description {
+    position: relative;
+    top: 25px;
+    display: inline;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

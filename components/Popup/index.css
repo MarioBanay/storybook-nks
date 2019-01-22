@@ -6,20 +6,34 @@
 
 .Modal {
     position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: 70%;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px black;
-    padding: 5px;
+    padding: 16px;
+    left: 15%;
+    top: 20%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
-    border-radius: 5px;
-    color: white;
-    background-color: darkgray;
-    width: auto;
-    height: 200px;
-    text-align: center;
-    font-size: 8px;
-    top:50px;    
-    display: inline;
+
+}
+
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
 }
 
 
@@ -34,11 +48,4 @@
     height: 32px;
     width: 32px;
     visibility: hidden;
-}
-
-@media (min-width: 600px) {
-    .Modal {
-        width: 200px;
-        left: calc(50% + -180px);
-    }
 }

@@ -24,10 +24,12 @@ export default class Card extends React.Component {
                     </div>
                     <div className={classes.infoIcon}>
                         <Popup pupupText={this.props.description}>
-                            <RoundIconButton
-                                icon={this.props.infoIcon}
-                                clicked={this.props.clickedOnInfo}
-                            />
+                            <div className={classes.zindex}>
+                                <RoundIconButton
+                                    icon={this.props.infoIcon}
+                                    clicked={this.props.clickedOnInfo}
+                                />
+                            </div>
                         </Popup>
                     </div>
                     <div className={classes.imageContainer}>

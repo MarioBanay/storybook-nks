@@ -14,7 +14,7 @@ let gitHubIcon = <IcoMoon icon="github" color="black" style={star} />
 storiesOf('Popup', module)
     .add('with sample text', () => (
         <Popup
-            popupText="Sample Text" >
+            pupupText="Sample Text" >
             <RoundIconButton
                 icon={gitHubIcon}
             />
