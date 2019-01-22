@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './index.css';
 import RoundIconButton from '../RoundIconButton/index';
-import { action } from '@storybook/addon-actions';
+import Popup from '../Popup/index';
 
 export default class Card extends React.Component {
 
@@ -23,11 +23,12 @@ export default class Card extends React.Component {
                         />
                     </div>
                     <div className={classes.infoIcon}>
-                    
-                        <RoundIconButton
-                            icon={this.props.infoIcon}
-                            clicked={this.props.clickedOnInfo}
-                        />
+                        <Popup pupupText={this.props.description}>
+                            <RoundIconButton
+                                icon={this.props.infoIcon}
+                                clicked={this.props.clickedOnInfo}
+                            />
+                        </Popup>
                     </div>
                     <div className={classes.imageContainer}>
                         <img className={classes.img} src={this.props.imgBeerUrl} alt="image" />

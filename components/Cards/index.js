@@ -17,7 +17,7 @@ export default class Cards extends React.Component {
     infoButtonHandler = (id) => {
         this.props.clickedOnInfo(id);
     }
-    
+
     render() {
 
         let cards = this.props.beers.map((beer, key) =>
@@ -36,7 +36,7 @@ export default class Cards extends React.Component {
                 clickedOnAddToCart={() => this.addToCartButtonHandler(beer.id)}
 
                 infoIcon={this.props.infoIcon}
-                infoIconLink={this.props.infoIconLink}
+                description={beer.description}
                 clickedOnInfo={() => this.infoButtonHandler(beer.id)}
             />
             );

@@ -1,14 +1,11 @@
 .Container {
-    position: relative;
-    width: 32px;
+    display: inline-block;
     height: 32px;
-    margin: 5px;
-    left: 74px;
-    display: -webkit-inline-box;
+    width: 32px;
 }
 
 .Modal {
-    position: relative;
+    position: fixed;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px black;
     padding: 5px;
@@ -21,17 +18,21 @@
     height: 200px;
     text-align: center;
     font-size: 8px;
-    top:50px
+    top:50px;    
+    display: inline;
 }
 
 
 .Component {
-    position: absolute;
-    left: -5px;
-    top: -5px;    
+    position: relative;
+    left: 0px;
+    top: 0px;    
 }
 
 .Hide {
+    position: fixed;
+    height: 32px;
+    width: 32px;
     visibility: hidden;
 }
 
