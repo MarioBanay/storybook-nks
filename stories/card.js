@@ -7,6 +7,8 @@ import Card from '../components/Card/index';
 import beersJson from '../assets/beers.json';
 import Cards from '../components/Cards/index';
 import IcoMoon from 'react-icomoon';
+import { action } from '@storybook/addon-actions';
+
 
 const iconStyle = {
     width: '32px',
@@ -29,25 +31,32 @@ storiesOf('Card', module)
             
             favoriteIcon={<IcoMoon icon="star-full" color="orange" style={iconStyle} />}
             favoriteIconlink="https://google.com"  
-            
+            clickedOnFavorites={action('clicked on favorite button')}
+
             addToCartIcon={<IcoMoon icon="plus" color="black" style={iconStyle} />}
             addToCartIconLink={"https://amazon.com"}
+            clickedOnAddToCart={action('clicked on add to cart button')}
+
 
             infoIcon={<IcoMoon icon="info" color="black" style={iconStyle} />}
             infoIconLink={"https://facebook.com"}
+            clickedOnInfo={action('clicked on info cart button')}
+
         />
     ))
     .add('all cards', () => (
         <Cards
             beers={beersJson}
+            
+            favoriteIconFull={<IcoMoon icon="star-full" color="orange" style={iconStyle} />}
+            favoriteIconEmpty={<IcoMoon icon="star-empty" color="orange" style={iconStyle} />}
+            clickedOnFavorites={action('clicked on favorite button')}
 
-            favoriteIcon={<IcoMoon icon="star-empty" color="orange" style={iconStyle} />}
-            favoriteIconlink="https://google.com"  
             
             addToCartIcon={<IcoMoon icon="plus" color="black" style={iconStyle} />}
-            addToCartIconLink={"https://amazon.com"}
+            clickedOnAddToCart={action('clicked on add to cart button')}
 
             infoIcon={<IcoMoon icon="info" color="black" style={iconStyle} />}
-            infoIconLink={"https://facebook.com"}
+            clickedOnInfo={action('clicked on info button')}
         />
     ))

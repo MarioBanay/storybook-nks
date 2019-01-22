@@ -1,32 +1,31 @@
 import React from 'react';
 import classes from './index.css';
 import RoundIconButton from '../RoundIconButton/index';
+import { action } from '@storybook/addon-actions';
 
 export default class Card extends React.Component {
-    consoleLog = (poruka) => {
-        console.log(poruka);
-    }
+
 
     render() {
         return (
-            <div className={classes.card}>
+            <div className={classes.card} >
                 <div className={classes.image} >
-                    <div className={classes.favoriteIcon}>
+                    <div className={classes.favoriteIcon} >
                         <RoundIconButton
                             icon={this.props.favoriteIcon}
-                            clicked={this.props.favoriteIconlink}
+                            clicked={this.props.clickedOnFavorites}
                         />
                     </div>
                     <div className={classes.addToCartIcon}>
                         <RoundIconButton
                             icon={this.props.addToCartIcon}
-                            clicked={this.props.addToCartIconLink}
+                            clicked={this.props.clickedOnAddToCart}
                         />
                     </div>
                     <div className={classes.infoIcon}>
                         <RoundIconButton
                             icon={this.props.infoIcon}
-                            clicked={this.props.infoIconLink}
+                            clicked={this.props.clickedOnInfo}
                         />
                     </div>
                     <div className={classes.imageContainer}>

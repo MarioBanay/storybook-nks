@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './index.css';
 
+
 export default class RoundIconButton extends React.Component {
+
     render() {
         return (
             <div className={classes.RoundIconButton} onClick={this.props.clicked}>

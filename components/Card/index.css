@@ -36,6 +36,7 @@ body {
     top: 10px;
     left: 10px;
     float: left;
+    z-index: 100;
 }
 
 .addToCartIcon {
@@ -43,6 +44,7 @@ body {
     top: 10px;
     left: 120px;
     float: left;
+    z-index: 100;
 }
 
 .infoIcon {
@@ -50,6 +52,11 @@ body {
     top: 10px;
     left: -10px;
     float: right;
+    z-index: 100;
+}
+
+.favoriteIcon, .addToCartIcon, .infoIcon:hover {
+    cursor: pointer;
 }
 
 .imageContainer {
