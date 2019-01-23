@@ -7,6 +7,12 @@ import twitterIcon from '../assets/icons/PNG/twitter.png';
 import facebookIcon from '../assets/icons/PNG/facebook.png';
 import gitHubIcon from '../assets/icons/PNG/github.png';
 import instagramIcon from '../assets/icons/PNG/instagram.png';
+import IcoMoon from 'react-icomoon';
+
+const iconStyle = {
+    width: '32px',
+    height: '32px'
+};
 
 let data = [
     {
@@ -14,7 +20,7 @@ let data = [
             link="https://twitter.com/"
             text="twitter" />,
         icon: <RoundIconButton
-            icon={twitterIcon}
+            icon={<IcoMoon icon="twitter" color="black" style={iconStyle} />}
             link="https://twitter.com/" />
     },
     {
@@ -22,7 +28,7 @@ let data = [
             link="https://facebook.com/"
             text="facebook" />,
         icon: <RoundIconButton
-            icon={facebookIcon}
+            icon={<IcoMoon icon="facebook" color="black" style={iconStyle} />}
             link="https://facebook.com/" />
     },
     {
@@ -30,7 +36,7 @@ let data = [
             link="https://github.com/"
             text="GitHub" />,
         icon: <RoundIconButton
-            icon={gitHubIcon}
+            icon={<IcoMoon icon="github" color="black" style={iconStyle} />}
             link="https://github.com/" />
     },
     {
@@ -38,7 +44,7 @@ let data = [
             link="https://instagram.com/"
             text="instagram" />,
         icon: <RoundIconButton
-            icon={instagramIcon}
+            icon={<IcoMoon icon="instagram" color="black" style={iconStyle} />}
             link="https://instagram.com/" />
     }
 

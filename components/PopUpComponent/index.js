@@ -1,21 +1,13 @@
 import React, { Component } from 'react';
 
-import Aux from '../../hoc/Aux';
-import Modal from '../../components/UI/Modal/Modal';
+import Aux from '../hoc/index';
+import Modal from '../Modal/index';
 
 
 
 class PopUpComponent extends Component {
     state = {
-        ingredients: {
-            salad: 0,
-            bacon: 0,
-            cheese: 0,
-            meat: 0
-        },
-        totalPrice: 4,
-        purchasable: false,
-        purchasing: false
+        purchasing: true
     }
 
     purchaseHandler = () => {
@@ -31,17 +23,10 @@ class PopUpComponent extends Component {
     }
 
     render () {
-        const disabledInfo = {
-            ...this.state.ingredients
-        };
-        for ( let key in disabledInfo ) {
-            disabledInfo[key] = disabledInfo[key] <= 0
-        }
-        // {salad: true, meat: false, ...}
         return (
             <Aux>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
-                    <h1>Beer data</h1>
+                    {this.props.beer}
                 </Modal>
             </Aux>
         );

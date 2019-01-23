@@ -23,7 +23,7 @@ export default class Card extends React.Component {
                         />
                     </div>
                     <div className={classes.infoIcon}>
-                        <Popup pupupText={this.props.description}>
+                        <Popup pupupText={this.props.modalContent}>
                             <div className={classes.zindex}>
                                 <RoundIconButton
                                     icon={this.props.infoIcon}

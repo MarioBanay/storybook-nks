@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './index.css';
 import Card from '../Card/index';
-//import IcoMoon from 'react-icomoon';
+import Modal from '../Modal/index';
 
 export default class Cards extends React.Component {
 
@@ -27,11 +27,16 @@ export default class Cards extends React.Component {
         this.props.clickedOnInfo(id);
     }
 
+    cancelButtonHandler = (id) => {
+        this.props.clickedOnCancel(id);
+    }
+
+    closeModalHandler = (id) => {
+        this.props.clickedOnSide(id);
+    }
+
     render() {
-        const iconStyle = {
-            width: '32px',
-            height: '32px'
-        };
+
         let cards = this.props.beers.map((beer, key) =>
             <Card
                 key={key}
@@ -39,16 +44,27 @@ export default class Cards extends React.Component {
                 name={beer.name}
                 description={beer.description}
 
-                favoriteIcon={this.toggleFavoriteButton(beer.id) ? this.props.favoriteIconFull : this.props.favoriteIconEmpty }
-                favoriteIconFull={this.props.favoriteIconFull}
-                favoriteIconEmpty={this.props.favoriteIconEmpty}
+                favoriteIcon={this.toggleFavoriteButton(beer.id) ? this.props.favoriteIconFull : this.props.favoriteIconEmpty}
+
                 clickedOnFavorites={() => this.favoriteButtonClickHandler(beer.id)}
 
                 addToCartIcon={this.props.addToCartIcon}
                 clickedOnAddToCart={() => this.addToCartButtonHandler(beer.id)}
 
                 infoIcon={this.props.infoIcon}
-                description={beer.description}
+                modalContent={
+                    <Modal
+                        show={true}
+                        modalClosed={() => this.closeModalHandler(beer.id)}
+                        beerName={beer.name}
+                        beerimgUrl={beer.image_url}
+                        beerDescription={beer.description}
+                        cancelled={() => this.cancelButtonHandler(beer.id)}
+                        addToCart={() => this.addToCartButtonHandler(beer.id)}
+                        addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
+                        // clickedOnSide={() => this.closeModalHandler(beer.id)}
+                        
+                    />}
                 clickedOnInfo={() => this.infoButtonHandler(beer.id)}
             />
         );
