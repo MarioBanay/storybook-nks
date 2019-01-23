@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './index.css';
 import Card from '../Card/index';
-import IcoMoon from 'react-icomoon';
+//import IcoMoon from 'react-icomoon';
 
 export default class Cards extends React.Component {
 
@@ -39,7 +39,7 @@ export default class Cards extends React.Component {
                 name={beer.name}
                 description={beer.description}
 
-                favoriteIcon={this.toggleFavoriteButton(beer.id) ? <IcoMoon icon="star-full" color="orange" style={iconStyle} /> : <IcoMoon icon="star-empty" color="orange" style={iconStyle} /> }
+                favoriteIcon={this.toggleFavoriteButton(beer.id) ? this.props.favoriteIconFull : this.props.favoriteIconEmpty }
                 favoriteIconFull={this.props.favoriteIconFull}
                 favoriteIconEmpty={this.props.favoriteIconEmpty}
                 clickedOnFavorites={() => this.favoriteButtonClickHandler(beer.id)}
