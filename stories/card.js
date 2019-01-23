@@ -44,6 +44,7 @@ storiesOf('Card', module)
     .add('all cards', () => (
         <Cards
             beers={beersJson}
+            favoriteBeers={}
             
             favoriteIconFull={<IcoMoon icon="star-full" color="orange" style={iconStyle} />}
             favoriteIconEmpty={<IcoMoon icon="star-empty" color="orange" style={iconStyle} />}

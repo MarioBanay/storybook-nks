@@ -1,13 +1,22 @@
 import React from 'react';
 import classes from './index.css';
 import Card from '../Card/index';
+import IcoMoon from 'react-icomoon';
 
 export default class Cards extends React.Component {
 
-    toogleFavoriteButtonHandler = (id) => {
+    favoriteButtonClickHandler = (id) => {
         this.props.clickedOnFavorites(id);
-        // this.state.fav ? this.setState({ fav: false }) : this.setState({ fav: true });
-        // console.log(this.state.fav);
+    }
+
+    toggleFavoriteButton = (id) => {
+
+        let favoriteBeersUpdate = this.props.favoriteBeers.filter((el) => el.id === id);
+        if (favoriteBeersUpdate.length > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     addToCartButtonHandler = (id) => {
@@ -19,7 +28,10 @@ export default class Cards extends React.Component {
     }
 
     render() {
-
+        const iconStyle = {
+            width: '32px',
+            height: '32px'
+        };
         let cards = this.props.beers.map((beer, key) =>
             <Card
                 key={key}
@@ -27,10 +39,10 @@ export default class Cards extends React.Component {
                 name={beer.name}
                 description={beer.description}
 
-                favoriteIcon={this.props.favoriteIconEmpty}
+                favoriteIcon={this.toggleFavoriteButton(beer.id) ? <IcoMoon icon="star-full" color="orange" style={iconStyle} /> : <IcoMoon icon="star-empty" color="orange" style={iconStyle} /> }
                 favoriteIconFull={this.props.favoriteIconFull}
                 favoriteIconEmpty={this.props.favoriteIconEmpty}
-                clickedOnFavorites={() => this.toogleFavoriteButtonHandler(beer.id)}
+                clickedOnFavorites={() => this.favoriteButtonClickHandler(beer.id)}
 
                 addToCartIcon={this.props.addToCartIcon}
                 clickedOnAddToCart={() => this.addToCartButtonHandler(beer.id)}
@@ -39,7 +51,7 @@ export default class Cards extends React.Component {
                 description={beer.description}
                 clickedOnInfo={() => this.infoButtonHandler(beer.id)}
             />
-            );
+        );
         return (
             <div className={classes.main}>
                 {cards}
