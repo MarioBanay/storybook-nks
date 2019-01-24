@@ -9,7 +9,7 @@ export default class Table extends React.Component {
     );
 
     let tableData = this.props.tableData.map((data, index) =>
-      <tr key={index}>
+      <tr key={index} className={classes.rowColor}>
         <td>{index + 1}</td>
         <td>{data.image}</td>
         <td>{data.name}</td>
