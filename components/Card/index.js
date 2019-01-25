@@ -29,6 +29,7 @@ export default class Card extends React.Component {
                             beerName={this.props.beerName}
                             beerimgUrl={this.props.beerimgUrl}
                             beerDescription={this.props.beerDescription}
+                            addToCart={this.props.addToCart}
                         >
                             <div className={classes.zindex}>
                                 <RoundIconButton

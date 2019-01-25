@@ -57,6 +57,8 @@ export default class Cards extends React.Component {
                 beerimgUrl={beer.image_url}
                 beerDescription={beer.description}
 
+                addToCart={() => this.addToCartButtonHandler(beer.id)}
+                addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
 /*                 modalContent={
                     <Modal
                         show={true}

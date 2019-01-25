@@ -50,7 +50,8 @@ export default class Popup extends React.Component {
                         beerimgUrl={this.props.beerimgUrl}
                         beerDescription={this.props.beerDescription}
                         cancelled={this.handleMouseClick}
-                        //addToCart={() => this.addToCartButtonHandler(beer.id)}
+                        addToCart={this.props.addToCart}
+                        addToFavorites={this.props.addToFavorites}
                         //addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
                     // clickedOnSide={() => this.closeModalHandler(beer.id)}
 
