@@ -7,7 +7,7 @@ import Description from '../Description/index';
 
 const modal = (props) => (
     <Aux>
-        <Backdrop show={props.show} clicked={props.modalClosed} />
+        {/*<Backdrop show={props.show} clicked={props.modalClosed} />*/}
         <div
             className={classes.Modal}
             style={{

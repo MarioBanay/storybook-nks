@@ -6,26 +6,11 @@ import Modal from '../Modal/index';
 
 
 class PopUpComponent extends Component {
-    state = {
-        purchasing: true
-    }
-
-    purchaseHandler = () => {
-        this.setState({purchasing: true});
-    }
-
-    purchaseCancelHandler = () => {
-        this.setState({purchasing: false});
-    }
-
-    purchaseContinueHandler = () => {
-        alert('You continue!');
-    }
 
     render () {
         return (
             <Aux>
-                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
+                <Modal show={this.state.purchasing} >
                     {this.props.beer}
                 </Modal>
             </Aux>

@@ -55,7 +55,7 @@ export default class Cards extends React.Component {
                 modalContent={
                     <Modal
                         show={true}
-                        modalClosed={() => this.closeModalHandler(beer.id)}
+                        // modalClosed={() => this.closeModalHandler(beer.id)}
                         beerName={beer.name}
                         beerimgUrl={beer.image_url}
                         beerDescription={beer.description}
