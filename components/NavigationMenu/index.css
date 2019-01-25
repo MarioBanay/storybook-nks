@@ -1,4 +1,5 @@
 .NavigationMenu {
+    position: relative;
     width: 330px;
     height: 300px;
     margin: 5px;
@@ -8,7 +9,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     height: 100%;
-    border: 1px solid #ccc;
   }
 
 table, th, td {
@@ -18,12 +18,4 @@ table, th, td {
 th, td {
     padding: 15px;
     text-align: left;
-}
-
-.Menu {
-    background-color: rgb(177, 211, 250);
-}
-
-.Hyperlink {
-    width: 100px;
 }

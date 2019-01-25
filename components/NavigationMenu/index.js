@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 export default class NavigationMenu extends React.Component {
     render() {
         let tableItems = this.props.data.map((item, index) =>
-            <tr key={index}>
-                <td>
+            <tr key={index} className={classes.tableRow}>
+                <td className={classes.tableData}>
                     {item.link}
                 </td>
             </tr>
@@ -16,7 +16,7 @@ export default class NavigationMenu extends React.Component {
 
         return (
             <div className={classes.NavigationMenu}>
-                <table>
+                <table className={classes.Table}>
                     <tbody>
                         {tableItems}
                     </tbody>
