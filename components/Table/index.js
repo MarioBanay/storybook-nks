@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './index.css';
-import Button from '../RoundIconButton/index';
 
 export default class Table extends React.Component {
   render() {
@@ -9,17 +8,18 @@ export default class Table extends React.Component {
     );
 
     let tableData = this.props.tableData.map((data, index) =>
-      <tr key={index} className={classes.rowColor}>
+      <tr key={index}>
         <td>{index + 1}</td>
-        <td>{data.image}</td>
+        <td><img className={classes.beerImage} src={data.image} /></td>
         <td>{data.name}</td>
-        <td>{data.button}</td>
+        <td>{data.description}</td>
+        <td><div className={classes.Button}>{data.button}</div></td>
       </tr>
 
     );
 
     return (
-      <table className={classes.SimpleTable}>
+      <table>
         <tbody>
           <tr>
             {tableHeader}
