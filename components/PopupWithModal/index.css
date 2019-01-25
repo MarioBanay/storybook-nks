@@ -1,0 +1,40 @@
+.Container {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+.Modal {
+
+
+}
+
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+    .Modal {
+
+    }
+}
+
+
+.Component {
+    position: relative;
+    left: 0px;
+    top: 0px;    
+}
+
+.Hide {
+    position: fixed;
+    height: 32px;
+    width: 32px;
+    visibility: hidden;
+}

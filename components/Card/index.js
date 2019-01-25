@@ -2,11 +2,12 @@ import React from 'react';
 import classes from './index.css';
 import RoundIconButton from '../RoundIconButton/index';
 import Popup from '../Popup/index';
+import PopupWithModal from '../PopupWithModal/index';
 
 export default class Card extends React.Component {
 
-
     render() {
+        console.log("from card: " + this.props.showModal);
         return (
             <div className={classes.card} >
                 <div className={classes.image} >
@@ -23,14 +24,19 @@ export default class Card extends React.Component {
                         />
                     </div>
                     <div className={classes.infoIcon}>
-                        <Popup pupupText={this.props.modalContent}>
+                        <PopupWithModal
+                            //pupupText={this.props.modalContent} 
+                            beerName={this.props.beerName}
+                            beerimgUrl={this.props.beerimgUrl}
+                            beerDescription={this.props.beerDescription}
+                        >
                             <div className={classes.zindex}>
                                 <RoundIconButton
                                     icon={this.props.infoIcon}
                                     clicked={this.props.clickedOnInfo}
                                 />
                             </div>
-                        </Popup>
+                        </PopupWithModal>
                     </div>
                     <div className={classes.imageContainer}>
                         <img className={classes.img} src={this.props.imgBeerUrl} alt="image" />

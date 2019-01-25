@@ -4,9 +4,6 @@ import Aux from '../hoc';
 import Button from '../Button/index';
 
 const description = (props) => {
-
-    console.log('beer:' + ' ' + props.beerName);
-
     return (
         <Aux>
             <h3>{props.beerName}</h3>

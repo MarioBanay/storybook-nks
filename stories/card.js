@@ -37,13 +37,15 @@ storiesOf('Card', module)
             addToCartIcon={<IcoMoon icon="plus" color="black" style={iconStyle} />}
             clickedOnAddToCart={action('clicked on add to cart button')}
 
-
             infoIcon={<IcoMoon icon="info" color="black" style={iconStyle} />}
-            modalContent={
+            beerName="Goldings - IPA Is Dead"
+            beerimgUrl="https://images.punkapi.com/v2/48.png"
+            beerDescription="This is East Kent Goldings re- invented and re-imagined and shows just what can be done with English hops if you use enough of them. In this amped up Goldings reincarnation expect to be slammed with floral lavender, a fruity riot of blackberries and spiced pears, bubblegum, plums and the illusion of thyme."
+
+/*             modalContent={
                 <Modal
                     show={true}
                     //modalClosed={action('Clicked to close modal')}
-
                     beerName={beer[0].name}
                     beerimgUrl={beer[0].image_url}
                     beerDescription={beer[0].description}
@@ -52,7 +54,7 @@ storiesOf('Card', module)
                     cancelled={action('clicked on cancel button')}
                     clickedOnSide={action('clicked on side')}
                     addToFavorites={action('clicked on add to favorites button')}
-                />}
+                />} */
             clickedOnInfo={action('clicked on info cart button')}
 
         />

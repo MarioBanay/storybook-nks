@@ -7,7 +7,7 @@ import Modal from '../components/Modal/index';
 import beersJson from './beers.json';
 import { action } from '@storybook/addon-actions';
 import Description from '../components/Description/index';
-import PopUpComponent from '../components/PopUpComponent/index';
+
 
 let beer = beersJson.filter((beer) => beer.id == 4);
 
