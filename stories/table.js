@@ -62,6 +62,6 @@ storiesOf('Table', module)
         <Table
             tableHeader={tableItems}
             tableData={tableData}
-            clickedOnDeleteFavorite={action('clicked on delete favorite')}
+            clickedOnFavorites={action('clicked on delete favorite')}
         />
     ))

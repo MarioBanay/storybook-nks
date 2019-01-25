@@ -4,7 +4,7 @@ import classes from './index.css';
 export default class Table extends React.Component {
 
   deleteFavorite = (id) => {
-    this.props.clickedOnDeleteFavorite(id);
+    this.props.clickedOnFavorites(id);
 }
 
   render() {
