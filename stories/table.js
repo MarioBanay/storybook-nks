@@ -39,33 +39,21 @@ const tableData = [
         image: beer[0].image_url,
         name: beer[0].name,
         description: beer[0].description,
-        button:
-            <RoundIconButton
-                icon={favoriteIcon}
-                clicked={action('clicked on delete')}
-            />
+        button:favoriteIcon
     },
     {
         id: beer[1].id,
         image: beer[1].image_url,
         name: beer[1].name,
         description: beer[1].description,
-        button:
-            <RoundIconButton
-                icon={favoriteIcon}
-                clicked={action('clicked on delete')}
-            />
+        button:favoriteIcon
     },
     {
         id: beer[2].id,
         image: beer[2].image_url,
         name: beer[2].name,
         description: beer[2].description,
-        button:
-            <RoundIconButton
-                icon={favoriteIcon}
-                clicked={action('clicked on delete')}
-            />
+        button:favoriteIcon
     },
 ];
 
@@ -74,5 +62,6 @@ storiesOf('Table', module)
         <Table
             tableHeader={tableItems}
             tableData={tableData}
+            clickedOnDeleteFavorite={action('clicked on delete favorite')}
         />
     ))

@@ -2,6 +2,11 @@ import React from 'react';
 import classes from './index.css';
 
 export default class Table extends React.Component {
+
+  deleteFavorite = (id) => {
+    this.props.clickedOnDeleteFavorite(id);
+}
+
   render() {
     let tableHeader = this.props.tableHeader.map((item, key) =>
       <th key={key}>{item.name}</th>
@@ -13,7 +18,7 @@ export default class Table extends React.Component {
         <td><img className={classes.beerImage} src={data.image} /></td>
         <td>{data.name}</td>
         <td>{data.description}</td>
-        <td><div className={classes.Button}>{data.button}</div></td>
+        <td><div className={classes.Button} onClick={() => this.deleteFavorite(data.id)}>{data.button}</div></td>
       </tr>
 
     );

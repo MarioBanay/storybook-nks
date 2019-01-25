@@ -25,6 +25,7 @@ td:nth-child(4) {
 }
 
 .Button {
+    cursor: pointer;
     position: relative;
     top: 8px;
 }
