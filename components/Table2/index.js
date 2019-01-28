@@ -5,7 +5,13 @@ export default class Table2 extends React.Component {
 
   deleteFavorite = (id) => {
     this.props.clickedOnFavorites(id);
-}
+  }
+
+  quantityHandler = (qty) => {
+    this.props.enteredQuantity(qty);
+  }
+
+
 
   render() {
     let tableHeader = this.props.tableHeader.map((item, key) =>
@@ -18,7 +24,7 @@ export default class Table2 extends React.Component {
         <td><img className={classes.beerImage} src={data.image} /></td>
         <td>{data.name}</td>
         <td>{data.description}</td>
-        {this.props.quantity ? null : <td><input type="text" value={data.quantity} onChange={this.props.onChange}></input></td>} 
+        {this.props.quantity ? null : <td><input type="text" value={data.qty} onChange={(qty) => this.quantityHandler(qty)}></input></td>}
         <td><div className={classes.Button} onClick={() => this.deleteFavorite(data.id)}>{data.button}</div></td>
       </tr>
 

@@ -100,6 +100,6 @@ storiesOf('Table', module)
             tableData={tableData}
             clickedOnFavorites={action('clicked on delete favorite')}
             quantity={false}
-            onChange={action('quantity changed')}
+            enteredQuantity={action('quantity changed')}
         />
     ))
