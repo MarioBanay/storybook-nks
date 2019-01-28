@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './index.css';
 import Card from '../Card/index';
-import Modal from '../Modal/index';
 
 export default class Cards extends React.Component {
 

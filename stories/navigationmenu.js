@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import NavigationMenu from '../components/NavigationMenu/index';
 import Hyperlink from '../components/Hyperlink/index';
 
-
 let data = [
     {
         link: <Hyperlink link="https://google.com/" text="Google" />,

@@ -6,8 +6,6 @@ import IcoMoon from 'react-icomoon';
 import Modal from '../components/Modal/index';
 import beersJson from './beers.json';
 import { action } from '@storybook/addon-actions';
-import Description from '../components/Description/index';
-
 
 let beer = beersJson.filter((beer) => beer.id == 4);
 
@@ -30,8 +28,6 @@ let modal = <Modal
     addToFavorites={action('clicked on add to favorites')}
 />
 
-
-
 storiesOf('Popup', module)
     .add('with sample text', () => (
         <Popup
@@ -40,5 +36,4 @@ storiesOf('Popup', module)
                 icon={gitHubIcon}
             />
         </Popup>
-
     ));

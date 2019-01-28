@@ -3,10 +3,6 @@ import { storiesOf } from '@storybook/react';
 import Footer from '../components/Footer/index';
 import Hyperlink from '../components/Hyperlink/index';
 import RoundIconButton from '../components/RoundIconButton/index';
-import twitterIcon from '../assets/icons/PNG/twitter.png';
-import facebookIcon from '../assets/icons/PNG/facebook.png';
-import gitHubIcon from '../assets/icons/PNG/github.png';
-import instagramIcon from '../assets/icons/PNG/instagram.png';
 import IcoMoon from 'react-icomoon';
 
 const iconStyle = {
@@ -47,7 +43,6 @@ let data = [
             icon={<IcoMoon icon="instagram" color="black" style={iconStyle} />}
             link="https://instagram.com/" />
     }
-
 ];
 
 storiesOf('Footer', module)

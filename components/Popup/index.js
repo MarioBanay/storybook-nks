@@ -7,13 +7,12 @@ export default class Popup extends React.Component {
 
         this.handleMouseHover = this.handleMouseHover.bind(this);
         this.handleMouseClick = this.handleMouseClick.bind(this);
-        
+
         this.state = {
             isHovering: false,
             isClicked: false
         };
     }
-
 
     handleMouseHover() {
         this.setState(this.toggleHoverState);
@@ -32,7 +31,7 @@ export default class Popup extends React.Component {
 
     toggleClickState(state) {
         return {
-            
+
             isHovering: state.isHovering,
             isClicked: !state.isClicked
         };

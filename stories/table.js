@@ -1,20 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Table from '../components/Table/index';
 import Table2 from '../components/Table2/index';
-
-import RoundIconButton from '../components/RoundIconButton/index';
 import IcoMoon from 'react-icomoon';
 import { action } from '@storybook/addon-actions';
 import beersJson from './beers.json';
-
-let beer = beersJson.filter((beer) => beer.id < 4);
 
 const star = {
     width: '16px',
     height: '16px'
 };
 
+let beer = beersJson.filter((beer) => beer.id < 4);
 let favoriteIcon = <IcoMoon icon="cross" color="grey" style={star} />
 
 const tableItems1 = [
@@ -33,7 +29,7 @@ const tableItems1 = [
     {
         name: 'Quantity'
     },
-    
+
     {
         name: 'Remove'
     }
@@ -51,7 +47,7 @@ const tableItems2 = [
     },
     {
         name: 'Description'
-    },    
+    },
     {
         name: 'Remove'
     }
@@ -83,8 +79,6 @@ const tableData = [
         button: favoriteIcon
     },
 ];
-
-
 
 storiesOf('Table', module)
     .add('simple table', () => (

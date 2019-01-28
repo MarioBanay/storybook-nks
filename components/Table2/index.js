@@ -11,8 +11,6 @@ export default class Table2 extends React.Component {
     this.props.enteredQuantity(qty, id);
   }
 
-
-
   render() {
     let tableHeader = this.props.tableHeader.map((item, key) =>
       <th key={key}>{item.name}</th>

@@ -5,7 +5,6 @@ export Popup from './Popup';
 export Hyperlink from './Hyperlink';
 export NavigationMenu from './NavigationMenu';
 export Footer from './Footer';
-export Table from './Table';
 export Cards from './Cards';
 export Aux from './hoc';
 export Button from './Button';

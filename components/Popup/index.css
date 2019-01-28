@@ -4,11 +4,6 @@
     width: 32px;
 }
 
-.Modal {
-
-
-}
-
 .Backdrop {
     width: 100%;
     height: 100%;
@@ -19,17 +14,10 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 600px) {
-    .Modal {
-
-    }
-}
-
-
 .Component {
     position: relative;
     left: 0px;
-    top: 0px;    
+    top: 0px;
 }
 
 .Hide {
@@ -37,4 +25,8 @@
     height: 32px;
     width: 32px;
     visibility: hidden;
+}
+
+@media (min-width: 600px) {
+    .Modal {}
 }

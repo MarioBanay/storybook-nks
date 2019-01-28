@@ -9,4 +9,4 @@ export default class Hyperlink extends React.Component {
             </div>
         );
     }
-  }
+}

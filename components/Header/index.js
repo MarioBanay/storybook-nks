@@ -11,7 +11,3 @@ export default class Header extends React.Component {
     );
   }
 }
-
-Header.PropTypes = {
-  logo: PropTypes.string
-};

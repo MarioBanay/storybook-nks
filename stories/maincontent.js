@@ -30,7 +30,6 @@ let dataHeader = [
         link: <Hyperlink link="https://linkedin.com/" text="LinkedIn" />,
         text: "LinkedIn"
     }
-    
 ];
 
 let dataFooter = [
@@ -66,7 +65,6 @@ let dataFooter = [
             icon={<IcoMoon icon="instagram" color="black" style={iconStyle} />}
             link="https://instagram.com/" />
     }
-
 ];
 
 storiesOf('Main Content', module)
@@ -80,7 +78,6 @@ storiesOf('Main Content', module)
             favoriteIconEmpty={<IcoMoon icon="star-empty" color="orange" style={iconStyle} />}
             clickedOnFavorites={action('clicked on favorite button')}
 
-
             addToCartIcon={<IcoMoon icon="plus" color="black" style={iconStyle} />}
             clickedOnAddToCart={action('clicked on add to cart button')}
 
@@ -90,7 +87,5 @@ storiesOf('Main Content', module)
             clickedOnSide={action('clicked on side')}
             headerData={dataHeader}
             footerData={dataFooter}
-            
         />
-
     ));

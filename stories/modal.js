@@ -19,5 +19,4 @@ storiesOf('Modal', module)
             addToCart={action('clicked on add to cart')}
             addToFavorites={action('clicked on add to favorites')}
         />
-
     ));
