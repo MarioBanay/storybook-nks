@@ -88,7 +88,7 @@ const tableData = [
 
 storiesOf('Table', module)
     .add('simple table', () => (
-        <Table
+        <Table2
             tableHeader={tableItems2}
             tableData={tableData}
             clickedOnFavorites={action('clicked on delete favorite')}

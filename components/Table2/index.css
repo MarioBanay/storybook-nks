@@ -1,10 +1,5 @@
 .Button {
     cursor: pointer;
-    position: relative;
-    top: 30px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
 }
 
 th {
@@ -30,4 +25,11 @@ td:nth-child(4) {
 
 td {
     text-align: center;
+}
+
+input {
+    text-align: center;
+    width: 30px;
+    border: none;
+    cursor: pointer;
 }
