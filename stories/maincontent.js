@@ -13,7 +13,7 @@ const iconStyle = {
     height: '32px'
 };
 
-let dataHeader = [
+let navigationMenuData = [
     {
         link: <Hyperlink link="https://google.com/" text="Google" />,
         text: "Google"
@@ -32,7 +32,7 @@ let dataHeader = [
     }
 ];
 
-let dataFooter = [
+let footerData = [
     {
         link: <Hyperlink
             link="https://twitter.com/"
@@ -85,7 +85,7 @@ storiesOf('Main Content', module)
             clickedOnInfo={action('clicked on info button')}
             clickedOnCancel={action('clicked on cancel button')}
             clickedOnSide={action('clicked on side')}
-            headerData={dataHeader}
-            footerData={dataFooter}
+            headerData={navigationMenuData}
+            footerData={footerData}
         />
     ));

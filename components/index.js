@@ -9,4 +9,5 @@ export Cards from './Cards';
 export Aux from './hoc';
 export Button from './Button';
 export Table2 from './Table2';
+export MainContent from './MainContent';
 
