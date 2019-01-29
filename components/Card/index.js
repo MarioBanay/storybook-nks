@@ -7,7 +7,6 @@ import PopupWithModal from '../PopupWithModal/index';
 export default class Card extends React.Component {
 
     render() {
-        console.log("from card: " + this.props.showModal);
         return (
             <div className={classes.card} >
                 <div className={classes.image} >

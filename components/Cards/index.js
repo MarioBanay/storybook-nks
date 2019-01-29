@@ -58,19 +58,7 @@ export default class Cards extends React.Component {
 
                 addToCart={() => this.addToCartButtonHandler(beer.id)}
                 addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
-/*                 modalContent={
-                    <Modal
-                        show={true}
-                        // modalClosed={() => this.closeModalHandler(beer.id)}
-                        beerName={beer.name}
-                        beerimgUrl={beer.image_url}
-                        beerDescription={beer.description}
-                        cancelled={() => this.cancelButtonHandler()}
-                        addToCart={() => this.addToCartButtonHandler(beer.id)}
-                        addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
-                    // clickedOnSide={() => this.closeModalHandler(beer.id)}
 
-                    />} */
                 clickedOnInfo={() => this.infoButtonHandler(beer.id)}
             />
         );

@@ -25,7 +25,6 @@ export default class Table2 extends React.Component {
         {this.props.quantity ? null : <td><input className={classes.inputQuantity} type="text" value={data.quantity} onChange={(qty) => this.quantityHandler(qty, data.id)}></input></td>}
         <td><div className={classes.Button} onClick={() => this.deleteFavorite(data.id)}>{data.button}</div></td>
       </tr>
-
     );
 
     return (

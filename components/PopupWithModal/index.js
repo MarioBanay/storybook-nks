@@ -45,16 +45,12 @@ export default class Popup extends React.Component {
                 <div className={(this.state.isHovering || this.state.isClicked) ? classes.Modal : classes.Hide} >
                 <Modal
                         show={true}
-                        // modalClosed={() => this.closeModalHandler(beer.id)}
                         beerName={this.props.beerName}
                         beerimgUrl={this.props.beerimgUrl}
                         beerDescription={this.props.beerDescription}
                         cancelled={this.handleMouseClick}
                         addToCart={this.props.addToCart}
                         addToFavorites={this.props.addToFavorites}
-                        //addToFavorites={() => this.favoriteButtonClickHandler(beer.id)}
-                    // clickedOnSide={() => this.closeModalHandler(beer.id)}
-
                     />
                 </div>
                 <div
